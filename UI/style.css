@@ -126,6 +126,15 @@ hr {
 	color: #c04000;
 }
 
+#back {
+	position: absolute;
+	right: 200px;
+	font-size: 20px;
+	font-weight: bold;
+	top: 10px;
+	color: #c04000;
+}
+
 a {
 	text-decoration: none;
 }
