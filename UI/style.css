@@ -129,3 +129,15 @@ hr {
 a {
 	text-decoration: none;
 }
+
+#login {
+	display: block;
+	text-align: left;
+	padding: 10px;
+	margin: 1% auto 2% auto;
+	width: 50%;
+	border-radius: 10px;
+	border: solid 6px;
+	background-color: beige;
+	box-shadow: #c0c080;
+}
