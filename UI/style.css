@@ -141,3 +141,21 @@ a {
 	background-color: beige;
 	box-shadow: #c0c080;
 }
+
+/* mobile design*/
+@media (max-width: 700px) {
+	.mobile {
+	  display: grid;
+	  grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+	}
+	.container {
+	   width: 100%;
+	}
+	#navTab1 {
+		right: 10px;
+	}
+	#navTab2 {
+		right: 120px;
+	}
+  
+  }
