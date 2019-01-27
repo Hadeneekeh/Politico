@@ -1,0 +1,131 @@
+body {
+	font-family: sans-serif;
+	margin: 0px;
+}
+* {
+	box-sizing: border-box;
+}
+
+.landing {
+	background-image: url('election3.jpg');
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: left;
+	padding: 0 100px;
+}
+
+.landingH1 {
+	font-size: 50px;
+	color: #c04000;
+}
+
+#profileContentH1{
+	color: #400000;
+}
+
+.container {
+	padding: 10px;
+	background-color: rgb(250, 250, 240);
+	color: #400000;
+	margin: 0% auto 2% auto;
+	border: 1px solid #888;
+	width: 50%;
+	box-shadow: #c0c080;
+}
+
+#landingH2 {
+	color: #400000;
+	text-align: center;	
+}
+
+#landingH2:hover {
+	color: aliceblue;
+	background-color: #c0c080;
+}
+
+p {
+	font: 700;
+	font-size: 18px;
+	color: #c04000;
+}
+
+.landingParagraph {
+	color: rgba(161, 250, 191, 0.829);
+}
+
+input[type=text], input[type=password], input[type=date], input[type=email] {
+	width: 100%;
+	padding: 10px;
+	margin: 5px 0 10px 0;
+	display: inline-block;
+}
+
+input[type=text]:focus, input[type=textarea]:focus, input[type=password]:focus, input[type=date]:focus, input[type=email]:focus {
+	background-color: #ddd;	
+}
+
+.btn {
+	background-color: #400000;
+	color: #c0c080;
+	cursor: pointer;
+	width: 100%;
+	font-size: 14px;
+	padding: 8px;
+	border-radius: 8px;
+}
+
+.btn:active {
+	background-color: #c04000;
+	color: aliceblue;
+}
+
+.btn:hover {
+	background-color: #c04000;
+	color: aliceblue;
+}
+
+hr {
+	border: 1px solid #ddd;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.headerH1 {
+	color: #c04000;
+}
+
+#navTab1 {
+	position: absolute;
+	right: 50px;
+	font-size: 20px;
+	font-weight: bold;
+	top: 10px;
+	color: #c04000;
+}
+
+#navTab2 {
+	position: absolute;
+	right: 200px;
+	font-size: 20px;
+	font-weight: bold;
+	top: 10px;
+	color: #c04000;
+}
+
+#navTab3 {
+	position: absolute;
+	left: 200px;
+	font-size: 20px;
+	font-weight: bold;
+	top: 10px;
+	color: #c04000;
+}
+
+a {
+	text-decoration: none;
+}
