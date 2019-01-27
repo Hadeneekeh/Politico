@@ -1,0 +1,57 @@
+<!doctype html>
+<html> 
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">        
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>POLITICO - Contest</title>
+</head>
+
+<body>
+    <header>
+        <h1 class ='headerH1'>POLITICO</h1>
+    </header>
+
+    <section>
+        <div class="profileHeader">
+            <h1>Contest for a Political Office</h1>
+        </div>
+        
+        <div class="profileMenu">
+            <ul>
+                <a href="contest.html"><li>Contest</li></a>
+                <a href="voting.html"><li>Vote</li></a>
+                <a href="result.html"><li>Election Result</li></a>
+                <li>Log out</li>
+            
+            </ul>
+        </div>
+
+        <div class="profileContent"><br>
+           
+            <form>
+                <div id = 'login'>
+        
+                <p>Please use the form below to submit your interest</p>
+
+                <label><b>First Name</b></label>
+                <input type ='text' name = 'firstname' placeholder = 'Enter your name' required>
+
+                <label><b>Last Name</b></label>
+                <input type ='text' name = 'lastname' placeholder = 'Enter your Surname' required>
+        
+                <label><b>Email</b></label>
+                <input type ='email' name = 'email' placeholder = 'Enter your Email address' required>
+                
+                <select id="politicalOffices">
+                    <option id="politicalOffices">choose political office</option>
+                </select>  <span id="contestOption"><select id="politicalParties"><option id="politicalOffices">choose political party</option></select></span>
+        
+                <button type='submit' class='btn'>Submit</button>
+                </div>
+            </form>
+        </div>
+
+    </section>
+</body>
+</html>
