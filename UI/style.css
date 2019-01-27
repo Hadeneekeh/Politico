@@ -129,3 +129,33 @@ hr {
 a {
 	text-decoration: none;
 }
+
+#login {
+	display: block;
+	text-align: left;
+	padding: 10px;
+	margin: 1% auto 2% auto;
+	width: 50%;
+	border-radius: 10px;
+	border: solid 6px;
+	background-color: beige;
+	box-shadow: #c0c080;
+}
+
+/* mobile design*/
+@media (max-width: 700px) {
+	.mobile {
+	  display: grid;
+	  grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+	}
+	.container {
+	   width: 100%;
+	}
+	#navTab1 {
+		right: 10px;
+	}
+	#navTab2 {
+		right: 120px;
+	}
+  
+  }
