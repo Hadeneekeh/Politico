@@ -148,6 +148,42 @@ textarea{
 	padding: 10px;
 	margin: 5px 0 10px 0;
 }
+ul li {
+	padding: 20px;
+	border-bottom: 2px solid #400000;
+	list-style-type: none;
+	font: bold;
+	color: aliceblue;
+}
+
+ul li:hover {
+	background: #888;
+	cursor: pointer;
+}
+
+.profileHeader {
+	background-color: #400000;
+	color: aliceblue;
+	text-align : center;
+	height: 80px;
+	width: 100%;
+	padding-top: 15px;
+}
+
+.profileMenu {
+	background-color: #c04000;
+	width: 300px;
+	height: 400px;
+	float: left;
+	color: aliceblue;
+}
+
+.profileContent {
+	background-color: #c0c080;
+	height: 100vh;
+	color: #400000;
+	align-content: center;
+}
 /* mobile design*/
 @media (max-width: 700px) {
 	.mobile {
