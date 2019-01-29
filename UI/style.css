@@ -25,7 +25,7 @@ body {
 }
 
 #profileContentH1{
-	color: #400000;
+	color: #333;
 }
 
 .container {
@@ -73,8 +73,8 @@ input[type=text]:focus, input[type=textarea]:focus, input[type=password]:focus, 
 }
 
 .btn {
-	background-color: #400000;
-	color: #c0c080;
+	background-color: green;
+	color: aliceblue;
 	cursor: pointer;
 	width: 100%;
 	font-size: 14px;
@@ -83,12 +83,12 @@ input[type=text]:focus, input[type=textarea]:focus, input[type=password]:focus, 
 }
 
 .btn:active {
-	background-color: #c04000;
+	background-color: #4CF889;
 	color: aliceblue;
 }
 
 .btn:hover {
-	background-color: #c04000;
+	background-color: #35AC5F;
 	color: aliceblue;
 }
 
@@ -99,7 +99,7 @@ hr {
 }
 
 .headerH1 {
-	color: #c04000;
+	color: green;
 }
 
 #navTab1 {
@@ -150,8 +150,8 @@ a {
 	width: 50%;
 	border-radius: 10px;
 	border: solid 6px;
-	background-color: beige;
-	box-shadow: #c0c080;
+	background-color: white;
+	box-shadow: #A6BAAD;
 }
 
 textarea{
@@ -162,7 +162,7 @@ textarea{
 }
 ul li {
 	padding: 20px;
-	border-bottom: 2px solid #400000;
+	border-bottom: 2px solid white;
 	list-style-type: none;
 	font: bold;
 	color: aliceblue;
@@ -186,7 +186,7 @@ background-color: #333;
 }
 
 .profileHeader {
-	background-color: #400000;
+	background-color: #333;
 	color: aliceblue;
 	text-align : center;
 	height: 80px;
@@ -195,7 +195,7 @@ background-color: #333;
 }
 
 .profileMenu {
-	background-color: #c04000;
+	background-color: green;
 	width: 300px;
 	height: 400px;
 	float: left;
@@ -203,9 +203,9 @@ background-color: #333;
 }
 
 .profileContent {
-	background-color: #c0c080;
+	background-color: white;
 	height: 100vh;
-	color: #400000;
+	color: black;
 	align-content: center;
 }
 /* mobile design*/
