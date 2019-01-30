@@ -35,12 +35,15 @@
                     <p>Enter the details of the party that you wish to add</p>
                     
                     <label><b>Party Name</b></label>
-                    <input type ='text' name = 'party' placeholder = 'The Party Name' required>
+                    <input type ='text' class="partyName" name = 'party' placeholder = 'The Party Name' required>
                     
                     <label><b>Party Address</b></label>
-                    <input type ='text' name = 'partyAddress' placeholder = 'The Party Adress' required>
+                    <input type ='text' class="partyAddress" name = 'partyAddress' placeholder = 'The Party Adress' required>
                     
-                    <button type='submit' class='btn'>Submit</button>
+                    <label><b>Party Logo</b></label>
+                    <input type="file" class="partyLogo" name="pic" accept="image/*">
+
+                    <button type='submit' class='btn' class="partySubmit">Submit</button>
                     </div>
                 </form>
             </div>
