@@ -20,37 +20,74 @@ body {
 }
 
 .landingH1 {
+<<<<<<< HEAD
 	font-size: 60px;
+=======
+	font-size: 50px;
+>>>>>>> [Feature
 	color: green;
 }
 
 #profileContentH1{
-	color: #400000;
+	color: #333;
+}
+
+#officeList {
+	background-color: #333;
+	padding: 20px;
+	border-bottom: 2px solid black;
+	list-style-type: none;
+	font: bold;
+	color: aliceblue;
+}
+
+#officeList:hover{
+	cursor: default;
 }
 
 .container {
 	padding: 10px;
 	background-color: rgb(250, 250, 240);
-	color: #400000;
+	color: black;
 	margin: 0% auto 2% auto;
-	border: 1px solid #888;
 	width: 50%;
-	box-shadow: #c0c080;
+	border-radius: 10px;
+	border: solid 6px;
+	background-color: white;
+	box-shadow: #A6BAAD;
 }
 
 #landingH2 {
-	color: #400000;
+	color: #333;
 	text-align: center;	
-}
-
-#landingH2:hover {
-	color: aliceblue;
-	background-color: #c0c080;
 }
 
 h2{
 	color: #333;
 }
+#menu-container {
+	text-align: left;
+	list-style-type: none;
+	padding: 14px 16px;
+	overflow: hidden;
+	background-color: #333;
+}
+#menu {
+	display: inline;
+	}
+
+<<<<<<< HEAD
+h2{
+	color: #333;
+}
+=======
+	#dropdown {
+	text-align: left;
+	padding: 10px;
+	margin: 1% auto 2% auto;
+	width: 50%;
+	}
+>>>>>>> [Feature
 p {
 	font: 700;
 	font-size: 18px;
@@ -61,11 +98,21 @@ p {
 	color: rgba(161, 250, 191, 0.829);
 }
 
-input[type=text], input[type=password], input[type=date], input[type=email] {
+input[type=text], input[type=file], input[type=password], input[type=date], input[type=email] {
 	width: 100%;
 	padding: 10px;
 	margin: 5px 0 10px 0;
 	display: inline-block;
+}
+
+#contestOption1 {
+	float: left;
+	width: 50%;
+}
+
+#contestOption2 {
+	float: right;
+	width: 50%;
 }
 
 input[type=text]:focus, input[type=textarea]:focus, input[type=password]:focus, input[type=date]:focus, input[type=email]:focus {
@@ -73,8 +120,8 @@ input[type=text]:focus, input[type=textarea]:focus, input[type=password]:focus, 
 }
 
 .btn {
-	background-color: #400000;
-	color: #c0c080;
+	background-color: green;
+	color: aliceblue;
 	cursor: pointer;
 	width: 100%;
 	font-size: 14px;
@@ -83,12 +130,12 @@ input[type=text]:focus, input[type=textarea]:focus, input[type=password]:focus, 
 }
 
 .btn:active {
-	background-color: #c04000;
+	background-color: #4CF889;
 	color: aliceblue;
 }
 
 .btn:hover {
-	background-color: #c04000;
+	background-color: #35AC5F;
 	color: aliceblue;
 }
 
@@ -99,7 +146,7 @@ hr {
 }
 
 .headerH1 {
-	color: #c04000;
+	color: green;
 }
 
 #navTab1 {
@@ -108,7 +155,7 @@ hr {
 	font-size: 20px;
 	font-weight: bold;
 	top: 10px;
-	color: #c04000;
+	color: green;
 }
 
 #navTab2 {
@@ -117,7 +164,7 @@ hr {
 	font-size: 20px;
 	font-weight: bold;
 	top: 10px;
-	color: #c04000;
+	color: green;
 }
 
 #navTab3 {
@@ -126,7 +173,7 @@ hr {
 	font-size: 20px;
 	font-weight: bold;
 	top: 10px;
-	color: #c04000;
+	color:green;
 }
 
 #back {
@@ -135,7 +182,7 @@ hr {
 	font-size: 20px;
 	font-weight: bold;
 	top: 10px;
-	color: #c04000;
+	color: green;
 }
 
 a {
@@ -150,8 +197,8 @@ a {
 	width: 50%;
 	border-radius: 10px;
 	border: solid 6px;
-	background-color: beige;
-	box-shadow: #c0c080;
+	background-color: white;
+	box-shadow: #A6BAAD;
 }
 
 textarea{
@@ -162,7 +209,7 @@ textarea{
 }
 ul li {
 	padding: 20px;
-	border-bottom: 2px solid #400000;
+	border-bottom: 2px solid white;
 	list-style-type: none;
 	font: bold;
 	color: aliceblue;
@@ -186,7 +233,7 @@ background-color: #333;
 }
 
 .profileHeader {
-	background-color: #400000;
+	background-color: #333;
 	color: aliceblue;
 	text-align : center;
 	height: 80px;
@@ -195,7 +242,7 @@ background-color: #333;
 }
 
 .profileMenu {
-	background-color: #c04000;
+	background-color: green;
 	width: 300px;
 	height: 400px;
 	float: left;
@@ -203,11 +250,37 @@ background-color: #333;
 }
 
 .profileContent {
-	background-color: #c0c080;
+	background-color: white;
 	height: 100vh;
-	color: #400000;
+	color: black;
 	align-content: center;
 }
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+  }
+  
+  td, th {
+	border: 1px solid white;
+	text-align: left;
+	padding: 8px;
+  }
+  
+  td:nth-child(even) {
+	background-color: green;
+  }
+
+  th {
+	background-color: green;
+	color: white;
+  }
+
+  tr {
+	background-color: #4CF889;
+	color: white;
+  }
+	
 /* mobile design*/
 @media (max-width: 700px) {
 	.mobile {

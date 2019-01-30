@@ -32,8 +32,20 @@
                 <form>
                     <div id = 'login'>
                     <h1 id="profileContentH1">Create Political Office</h1>
-                    <p>Enter the name of the office that you wish to add</p>
+                    <p>Enter the deatils of the office that you wish to add</p>
+                    
+                    <label><b>Office Name</b></label>
                     <input type ='text' name = 'party' placeholder = 'The Office Name' required>
+                    
+                    <label><b>Office Type</b></label>
+                    <select id="dropdown">
+                        <option>Please Select an Option</option>
+                        <option>Federal</option>
+                        <option>State</option>
+                        <option>Legislative</option>
+                        <option>Local Government</option>
+                    </select>
+
                     <button type='submit' class='btn'>Submit</button>
                     </div>
                 </form>

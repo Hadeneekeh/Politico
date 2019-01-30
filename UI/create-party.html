@@ -32,9 +32,18 @@
                 <form>
                     <div id = 'login'>
                     <h1 id="profileContentH1">Add Political Party</h1>
-                    <p>Enter the name of the party that you wish to add</p>
-                    <input type ='text' name = 'party' placeholder = 'The Party Name' required>
-                    <button type='submit' class='btn'>Submit</button>
+                    <p>Enter the details of the party that you wish to add</p>
+                    
+                    <label><b>Party Name</b></label>
+                    <input type ='text' class="partyName" name = 'party' placeholder = 'The Party Name' required>
+                    
+                    <label><b>Party Address</b></label>
+                    <input type ='text' class="partyAddress" name = 'partyAddress' placeholder = 'The Party Adress' required>
+                    
+                    <label><b>Party Logo</b></label>
+                    <input type="file" class="partyLogo" name="pic" accept="image/*">
+
+                    <button type='submit' class='btn' class="partySubmit">Submit</button>
                     </div>
                 </form>
             </div>
