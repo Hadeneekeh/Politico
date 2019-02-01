@@ -71,6 +71,37 @@ getAllParties(req, res){
         ]
     })
 }
+createOffice(req, res){
+    if(!req.body.type) {
+      return res.status(400).send({
+        status: '400',
+        message: 'Office type field is required'
+      })
+    } else if(!req.body.name){
+        return res.status(400).send({
+            status: 400,
+            message: "Name field is required"
+        })
+    }
+
+    const offices = {
+        id: db.length + 1,
+        type: req.body.type, 
+        name: req.body.name
+      }
+      db.push(offices);
+      return res.status(201).send({
+        status: 201,
+        data: [
+            {
+                id: offices.id,
+                type: offices.type,
+                name: offices.name
+            }
+        ]
+      })
+
+}
 }
 
 const politicoController = new PoliticoController()

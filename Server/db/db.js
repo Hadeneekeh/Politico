@@ -8,4 +8,13 @@ const parties =  [
     }
 ];
 
-export default parties;
+const offices =  [
+  {
+    id: 1,
+    type: "Federal",
+    name: "Presidency",
+   
+  }
+];
+
+export default offices;
