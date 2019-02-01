@@ -60,6 +60,17 @@ class PoliticoController {
         message: "Party not found"
     })
 }
+
+getAllParties(req, res){
+    return res.status(200).send({
+        status: 200,
+        data: [
+            {
+                parties: db
+            }
+        ]
+    })
+}
 }
 
 const politicoController = new PoliticoController()
