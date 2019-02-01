@@ -5,17 +5,17 @@ class PoliticoController {
     createParty(req, res){
     if(!req.body.name) {
       return res.status(400).send({
-        success: 'false',
+        status: '400',
         message: 'name is required'
       });
     } else if(!req.body.hqAddress){
         return res.status(400).send({
-            success: false,
+            status: 400,
             message: "Headquater address field is required"
         })
     } else if(!req.body.logoUrl){
         return res.status(400).send({
-            success: false,
+            status: 400,
             message: "Logo URL field is required"
         })
     }
@@ -37,6 +37,29 @@ class PoliticoController {
      ]
    })
   }
+
+  getAParty(req, res){
+    const id = parseInt(req.params.id)
+    db.map(parties => {
+        if(parties.id === id){
+            return res.status(200).send({
+                status: 201,
+     data: [
+         {
+             id: parties.id,
+             name: parties.name,
+             logoUrl: parties.logoUrl
+         }
+     ]
+            })
+        }
+    })
+
+    return res.status(404).send({
+        status: 404,
+        message: "Party not found"
+    })
+}
 }
 
 const politicoController = new PoliticoController()
