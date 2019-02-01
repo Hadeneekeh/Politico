@@ -3,8 +3,9 @@ import express from "express"
 import politicoController from "../Controllers/politico"
 
 const router = express.Router();
-const versionedEndPoint = '/api/v1/party' 
+const versionedEndPoint = '/api/v1/party/' 
 
 router.post(versionedEndPoint, politicoController.createParty)
+router.get(`${versionedEndPoint}:id`, politicoController.getAParty)
 
 export default router;
