@@ -36,9 +36,9 @@ class PoliticoController {
          }
      ]
    })
-  }
+        }
 
-  getAParty(req, res){
+    getAParty(req, res){
     const id = parseInt(req.params.id)
     db.map(parties => {
         if(parties.id === id){
@@ -59,9 +59,9 @@ class PoliticoController {
         status: 404,
         message: "Party not found"
     })
-}
+        }
 
-getAllParties(req, res){
+    getAllParties(req, res){
     return res.status(200).send({
         status: 200,
         data: [
@@ -70,8 +70,8 @@ getAllParties(req, res){
             }
         ]
     })
-}
-createOffice(req, res){
+        }
+    createOffice(req, res){
     if(!req.body.type) {
       return res.status(400).send({
         status: '400',
@@ -101,9 +101,9 @@ createOffice(req, res){
         ]
       })
 
-}
+        }
 
-getAnOffice(req, res){
+    getAnOffice(req, res){
     const id = parseInt(req.params.id)
     db.map(offices => {
         if(offices.id === id){
@@ -123,7 +123,17 @@ getAnOffice(req, res){
         status: 404,
         message: "Office not found"
     })
-}
+    }
+
+    getAllOffices(req, res){
+        return res.status(200).send({
+            status: 200,
+            data: [
+                {
+                    offices: db
+                }]
+              })
+    }
 }
 
 const politicoController = new PoliticoController()
