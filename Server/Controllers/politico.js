@@ -102,6 +102,28 @@ createOffice(req, res){
       })
 
 }
+
+getAnOffice(req, res){
+    const id = parseInt(req.params.id)
+    db.map(offices => {
+        if(offices.id === id){
+            return res.status(200).send({
+                status: 201,
+     data: [
+         {
+             id: offices.id,
+             name: offices.name   
+         }
+     ]
+            })
+        }
+    })
+
+    return res.status(404).send({
+        status: 404,
+        message: "Office not found"
+    })
+}
 }
 
 const politicoController = new PoliticoController()

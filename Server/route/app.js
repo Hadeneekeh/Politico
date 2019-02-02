@@ -10,5 +10,7 @@ router.post(versionedEndPoint, politicoController.createParty)
 router.get(`${versionedEndPoint}:id`, politicoController.getAParty)
 router.get(versionedEndPoint, politicoController.getAllParties)
 router.post(versionedEndPoint2, politicoController.createOffice)
+router.get(`${versionedEndPoint2}:id`, politicoController.getAnOffice)
+
 
 export default router;
